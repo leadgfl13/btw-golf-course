@@ -13,10 +13,11 @@
     var underground = new Audio('underground.mp3');
     var athletic = new Audio('athletic.mp3');
     var pipe = new Audio('pipe.mp3');
-    var mushroom = new Audio('mushroom.mp3');
+    var mushroom = new Audio('appear.mp3');
     var flag = new Audio('flag.mp3');
     var star = new Audio('star.mp3');
     var block = new Audio('break.mp3');
+    var death = new Audio('death.mp3');
     const play =addEventListener('keydown', ()=> {
         var name = event.key
         var code = event.code
@@ -40,6 +41,9 @@
         if(name === 'b'){
             block.play();
         }
+        if(name === 'd'){
+            death.play()
+        }
     })
 
 
@@ -62,10 +66,8 @@
             pipe.pause()
             pipe.currentTime = 0; 
          }
-         if (name === 'm'){
-            mushroom.pause()
-            mushroom.currentTime = 0; 
-         }
+        
+         
          if (name === 'f'){
             flag.pause()
             flag.currentTime = 0; 
@@ -74,10 +76,7 @@
             star.pause()
             star.currentTime = 0;
         }
-        if (name === 'b'){
-            block.pause()
-            block.currentTime = 0;
-        }
+       
     }
             )
         
