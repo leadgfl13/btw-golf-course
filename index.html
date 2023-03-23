@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset ='UTF-8'>
+    <Title>BTW SHI!</Title>
+</head>
+<body>
+<h1>Sup Gabe</h1>
+</body>
+
+<script>
+
+    var overworld = new Audio('overworld.mp3');
+    var underground = new Audio('underground.mp3');
+    var athletic = new Audio('athletic.mp3');
+    var pipe = new Audio('pipe.mp3');
+    var mushroom = new Audio('mushroom.mp3');
+    const play =addEventListener('keydown', ()=> {
+        var name = event.key
+        var code = event.code
+        if (name === 'v'){
+            overworld.play();
+        }
+        if (name === 'c'){
+            underground.play()}
+        if (name === 'a'){
+            athletic.play()}
+        if (name === 'p'){
+            pipe.play()}
+        if (name === 'm'){
+            mushroom.play()}
+    })
+
+
+    const stop = addEventListener('keyup', ()=> {
+        var name = event.key
+        var code = event.code
+        if (name === 'v'){
+            overworld.pause();
+            overworld.currentTime = 0;
+        }
+        if (name === 'c'){
+            underground.pause()
+            underground.currentTime = 0;
+        }
+        if (name === 'a'){
+            athletic.pause()
+            athletic.currentTime = 0;
+        }
+         if (name === 'p'){
+            pipe.pause()
+            pipe.currentTime = 0; 
+         }
+         if (name === 'mushroom'){
+            mushroom.pause()
+            pipemushroom.currentTime = 0; 
+         }
+    }
+            )
+        
+
+</script>
+</html>
