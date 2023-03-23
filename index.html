@@ -20,10 +20,10 @@
     const play =addEventListener('keydown', ()=> {
         var name = event.key
         var code = event.code
-        if (name === 'v'){
+        if (name === 'o'){
             overworld.play();
         }
-        if (name === 'c'){
+        if (name === 'u'){
             underground.play()}
         if (name === 'a'){
             athletic.play()}
@@ -31,12 +31,14 @@
             pipe.play()}
         if (name === 'm'){
             mushroom.play()}
-         if (name === 'f'){
+        if (name === 'f'){
             flag.play();
         }
         if (name === 's'){
             star.play()
-            block.play()
+        }
+        if(name === 'b'){
+            block.play();
         }
     })
 
@@ -44,11 +46,11 @@
     const stop = addEventListener('keyup', ()=> {
         var name = event.key
         var code = event.code
-        if (name === 'v'){
+        if (name === 'o'){
             overworld.pause();
             overworld.currentTime = 0;
         }
-        if (name === 'c'){
+        if (name === 'u'){
             underground.pause()
             underground.currentTime = 0;
         }
@@ -71,6 +73,8 @@
          if (name === 's'){
             star.pause()
             star.currentTime = 0;
+        }
+        if (name === 'b'){
             block.pause()
             block.currentTime = 0;
         }
