@@ -23,7 +23,6 @@
 </body style>
 
 <script>
-
     var overworld = new Audio('overworld.mp3');
     var underground = new Audio('underground.mp3');
     var athletic = new Audio('athletic.mp3');
@@ -33,11 +32,27 @@
     var star = new Audio('star.mp3');
     var block = new Audio('break.mp3');
     var death = new Audio('death.mp3');
+    var throwback = new Audio('Throwback.mp3')
+
+    var rand = ''
+    const overworldSongs = [overworld,throwback, athletic]
+    
+    
+function playRandom(){
+    const overworldSongs = [overworld,throwback, athletic]
+    choice = Math.floor(Math.random()* overworldSongs.length)
+    rand = overworldSongs[choice]
+    return rand
+
+}
+playRandom()
     const play =addEventListener('keydown', ()=> {
+        
         var name = event.key
         var code = event.code
         if (name === 'o'){
-            overworld.play();
+            rand.play()
+           
         }
         if (name === 'u'){
             underground.play()}
@@ -66,8 +81,10 @@
         var name = event.key
         var code = event.code
         if (name === 'o'){
-            overworld.pause();
-            overworld.currentTime = 0;
+            rand.pause()
+            rand.currentTime = 0;
+            playRandom()
+           
         }
         if (name === 'u'){
             underground.pause()
