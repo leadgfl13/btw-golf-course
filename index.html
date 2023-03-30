@@ -10,12 +10,13 @@
     <ul>
         <l1>hold a for athletic theme</l1>
         <l1>hit m for musrhoom sound</l1>
-        <l1>hold o for overworld theme</l1>
-        <l1>hold u for underworld theme</l1>
+        <l1>hold o for random overworld theme</l1>
+        <l1>hold u for random underworld theme</l1>
         <l1>hold f for flagpole theme</l1>
         <l1>hold s for star theme</l1>
         <l1>hit d for death theme</l1>
         <l1>hit b for block break </l1>
+        <l1>hold p for warp pipe </l1>
     </ul>
 
 </div>
@@ -35,16 +36,16 @@
     var throwback = new Audio('Throwback.mp3');
     var stuff = new Audio('SMBoverworld.mp3');
     var things = new Audio('SMB3overworld.mp3');
-    var under1 =new Audio('undergound1.mp3')
+    var under1 =new Audio('underground1.mp3')
     var under3 = new Audio('underground3.mp3')
     var slide = new Audio('slide.mp3')
     var yoshi = new Audio('Yoshi1.mp3')
 
     var rand = ''
-    const overworldSongs = [overworld,throwback, athletic, things,stuff]
+   
     
     var under = ''
-    const underSongs = [underground, under1, under3]
+   
     
 function playRandom(){
     const overworldSongs = [overworld,throwback, athletic, things, stuff,yoshi, slide]
@@ -54,8 +55,8 @@ function playRandom(){
 }
     function playRandomUnder(){
     const underSongs = [underground, under1, under3]
-    choice = Math.floor(Math.random()* overworldSongs.length)
-    rand = overworldSongs[choice]
+    choice = Math.floor(Math.random()* underSongs.length)
+    under = underSongs[choice]
     return under
 }
 
@@ -104,6 +105,7 @@ playRandom()
         if (name === 'u'){
             under.pause()
             under.currentTime = 0;
+            playRandomUnder()
         }
         if (name === 'a'){
             athletic.pause()
