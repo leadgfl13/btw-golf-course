@@ -35,18 +35,31 @@
     var throwback = new Audio('Throwback.mp3');
     var stuff = new Audio('SMBoverworld.mp3');
     var things = new Audio('SMB3overworld.mp3');
+    var under1 =new Audio('undergound1.mp3')
+    var under3 = new Audio('underground3.mp3')
+    var slide = new Audio('slide.mp3')
+    var yoshi = new Audio('Yoshi1.mp3')
 
     var rand = ''
     const overworldSongs = [overworld,throwback, athletic, things,stuff]
     
+    var under = ''
+    const underSongs = [underground, under1, under3]
     
 function playRandom(){
-    const overworldSongs = [overworld,throwback, athletic, things, stuff]
+    const overworldSongs = [overworld,throwback, athletic, things, stuff,yoshi, slide]
     choice = Math.floor(Math.random()* overworldSongs.length)
     rand = overworldSongs[choice]
     return rand
-
 }
+    function playRandomUnder(){
+    const underSongs = [underground, under1, under3]
+    choice = Math.floor(Math.random()* overworldSongs.length)
+    rand = overworldSongs[choice]
+    return under
+}
+
+playRandomUnder()
 playRandom()
     const play =addEventListener('keydown', ()=> {
         
@@ -57,7 +70,7 @@ playRandom()
            
         }
         if (name === 'u'){
-            underground.play()}
+            under.play()}
         if (name === 'a'){
             athletic.play()}
         if (name === 'p'){
@@ -89,8 +102,8 @@ playRandom()
            
         }
         if (name === 'u'){
-            underground.pause()
-            underground.currentTime = 0;
+            under.pause()
+            under.currentTime = 0;
         }
         if (name === 'a'){
             athletic.pause()
