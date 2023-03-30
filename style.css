@@ -3,12 +3,13 @@ body{
     background-size:cover;
     display:flex;
     align-items:center;
+    margin:200px;
     justify-content:center;
     flex-direction:column;
+    gap:80px;
 }
 
 .instructions{
-    align-self:center;
     background-color:white;
     display:flex;
     margin:0px;
@@ -16,14 +17,17 @@ body{
     border-style:groove;
     border-width:20px;
     border-radius:10px;
-    justify-content:center;
-    align-items:center;
+  
     width:500px;
     align-self:center;
-    
+    padding:20px;
+    text-align:center;    
 
 }
 .title{
+    padding:20px;
+    padding-left:30px;
+    padding-right:30px;
     background-color:white;
     display:flex;
     margin:10px;
@@ -38,6 +42,7 @@ body{
 }
 
 ul{
+    text-align:center;
     display:flex;
     flex-direction:column;
     align-items:center;
