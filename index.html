@@ -6,24 +6,60 @@
 </head>
 <body>
 <div class = "title"> BTW Mario Soundboard</div>
-<div class = instructions>
-    <ul>
-        <l1>hold <em>a</em> for athletic theme</l1>
-        <l1>hit <em>m</em> for musrhoom sound</l1>
-        <l1>hold <em>o</em> for random overworld theme</l1>
-        <l1>hold <em>u</em> for random underworld theme</l1>
-        <l1>hold <em>f</em> for end theme</l1>
-        <l1>hold <em>s</em> for star theme</l1>
-        <l1>hit <em>d</em> for death theme</l1>
-        <l1>hit <em>b</em> for block break </l1>
-        <l1>hold <em>p</em> for warp pipe </l1>
-    </ul>
 
-</div>
+
+    <table>
+        <tr>
+            <th>Button</th>
+            <th>Theme</th>
+        </tr>
+        <tr>
+            <td>Hold <em>a</em></td>
+            <td>Athletic Theme</td>
+        </tr>
+        <tr>
+            <td>Hit <em>m</em></td>
+            <td>mushroom sound</td>
+        </tr>
+        <tr>
+            <td>Hold <em>o</em></td>
+            <td>overworld theme</td>
+        </tr>
+        <tr>
+            <td>Hold <em>u</em></td>
+            <td>underground theme</td>
+        </tr>
+        <tr>
+            <td>Hold <em>f</em></td>
+            <td> end theme</td>
+        </tr>
+        <tr>
+            <td>Hold <em>s</em></td>
+            <td>star theme</td>
+        </tr>
+        <tr>
+            <td>Hit <em>d</em></td>
+            <td>death theme</td>
+        <tr>
+        <tr>
+            <td>Hit <em>b</em></td>
+            <td> block break</td>
+        </tr>
+        <tr>
+            <td>Hold <em>p</em></td>
+            <td>pipe sound</td>
+        </tr>
+        <tr>
+            <td>Hit <em>i</em></td>
+            <td>Mario voice</td>
+        </tr>
+    </table>
+
 
 </body style>
 
 <script>
+    var mario = new Audio('Mario.mp3')
     var overworld = new Audio('overworld.mp3');
     var underground = new Audio('underground.mp3');
     var athletic = new Audio('athletic.mp3');
@@ -87,6 +123,8 @@ playRandom()
         if(name === 'd'){
             death.play()
         }
+        if(name === 'i')
+             mario.play()
     })
 
 

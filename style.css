@@ -53,3 +53,19 @@ ul{
     font-family:'Courier New', Courier, monospace;
     color:skyblue;
 }
+
+table{
+    height:800px;
+    width:800px;
+    border-color:black;
+    border-width:5px;
+    border-style:groove;
+    background-color:white;
+    color:black;
+}
+
+td,th{
+    border-width:10px; color:black;border-style: groove;border-color:skyblue;
+    color:skyblue; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:24px;
+    text-align:center;
+}
