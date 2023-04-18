@@ -1,3 +1,11 @@
+
+
+@font-face{
+    font-family:mario-font;
+    src:url(../../fonts/SuperMario256.ttf);
+}
+
+
 body{
     background-image:url("mario.jpg");
     background-size:cover;
@@ -36,8 +44,8 @@ body{
     border-style:groove;
     font-size:40px;
     font-weight:700;
-    font-family:'Courier New', Courier, monospace;
-    color:skyblue;
+    font-family:'mario-font';
+    color:red;
 
 }
 
@@ -55,6 +63,7 @@ ul{
 }
 
 table{
+    
     height:800px;
     width:800px;
     border-color:black;
@@ -65,7 +74,7 @@ table{
 }
 
 td,th{
-    border-width:10px; color:black;border-style: groove;border-color:skyblue;
-    color:skyblue; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:24px;
+    border-width:8px; color:black;border-style: groove;border-color:skyblue;
+    color:red; font-family:mario-font; sans-serif;font-size:24px;
     text-align:center;
 }
