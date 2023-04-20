@@ -59,29 +59,31 @@
 </body style>
 
 <script>
-    var mario = new Audio('Mario.mp3')
+    var threedee = new Audio('3dworld.mp3')
+    var land = new Audio('land.mp3')
+    var mario = new Audio('mario5.mp3')
     var overworld = new Audio('overworld.mp3');
     var underground = new Audio('underground.mp3');
     var athletic = new Audio('athletic.mp3');
-    var pipe = new Audio('pipe.mp3');
+    var pipe = new Audio('pipe2.mp3');
     var mushroom = new Audio('appear.mp3');
     var end = new Audio('end.mp3');
     var star = new Audio('star.mp3');
     var block = new Audio('break.mp3');
     var death = new Audio('death.mp3');
-    var throwback = new Audio('Throwback.mp3');
+    var throwback = new Audio('Throwback2.mp3');
     var stuff = new Audio('SMBoverworld.mp3');
     var things = new Audio('SMB3overworld.mp3');
     var under1 =new Audio('underground1.mp3')
     var under3 = new Audio('underground3.mp3')
-    var slide = new Audio('slide.mp3')
-    var yoshi = new Audio('Yoshi1.mp3')
+    var slide = new Audio('slide2.mp3')
+    var yoshi = new Audio('yoshi3.mp3')
 
 
    
     
 function playRandom(){
-    const overworldSongs = [overworld,throwback, athletic, things, stuff,yoshi, slide]
+    const overworldSongs = [overworld,throwback, athletic, things, stuff,yoshi, slide,threedee,land]
     choice = Math.floor(Math.random()* overworldSongs.length)
     rand = overworldSongs[choice]
     return rand
